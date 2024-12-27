@@ -1,0 +1,36 @@
+server:
+  port: 9090
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/upwork
+    password: root
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    generate-ddl: true
+    database: postgresql
+    defer-datasource-initialization: true
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: javadev465@gmail.com
+    password: mgxq gefi hgeb pdqj
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls: true
+
+  sql:
+    init:
+      mode: always
+
+  security:
+    jwt:
+      token:
+        Secret: kjfsefhsf524585dnfsiefhgeskwfhiewfekjf65848513512354ejfbhewfygewfebsjhfsigtfuyewyu
+        Validity: 86400000
+
